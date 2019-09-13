@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    template:
+      default-topic: orders
+    consumer:
+      auto-offset-reset: earliest
+      group-id: consumer-${random.uuid}
